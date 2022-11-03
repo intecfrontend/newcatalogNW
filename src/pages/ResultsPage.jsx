@@ -470,11 +470,11 @@ const Resultspage = (props) => {
                                     "field": "cmp_collectionlinks"
                                 }
                             },
-                            {
-                                "term": {
-                                    "cmp_collectionlinks.cmps.cmp_type.keyword": "PROMO"
-                                }
-                            }
+                            // {
+                            //     "term": {
+                            //         "cmp_collectionlinks.cmps.cmp_type.keyword": "PROMO"
+                            //     }
+                            // }
                         ]
                     }
                 },
@@ -505,11 +505,11 @@ const Resultspage = (props) => {
                                     "field": "cmp_collectionlinks"
                                 }
                             },
-                            {
-                                "term": {
-                                    "cmp_collectionlinks.cmps.cmp_type.keyword": "PROMO"
-                                }
-                            }
+                            // {
+                            //     "term": {
+                            //         "cmp_collectionlinks.cmps.cmp_type.keyword": "PROMO"
+                            //     }
+                            // }
                         ]
                     }
                 },
@@ -628,17 +628,17 @@ const Resultspage = (props) => {
                                     <h5>{item.promocount} {item.promocount > 1 ? translate('promos') : 'Promo'}</h5>
                                     <div className="card_buttons">
                                         <Button
-                                            borderColor='pn'
+                                            borderColor='cn'
                                             text={`${translate('follow')}`}
-                                            txtColor='pn'
+                                            txtColor='cn'
                                             type='sub'
                                             size='S'
                                         />
                                         <Link to={`/business/${item.id}`}>
                                             <Button
-                                                borderColor='pn'
+                                                borderColor='cn'
                                                 text={`${translate('discover_more')}`}
-                                                txtColor='pn'
+                                                txtColor='cn'
                                                 type='sub'
                                                 size='S'
                                             />
