@@ -17,8 +17,6 @@ const Navigation = (props) => {
 
   const LogoSA = require(`../assets/imgs/logos/logo_shoppaworld.svg`).default;
   const LogoSA_Invert = require("../assets/imgs/logos/logo_shoppaworld-invert.svg").default;
-  const LogoPN = require(`../assets/imgs/logos/pn/logo_pn_${lang}.svg`);
-  const LogoPN_Invert = require(`../assets/imgs/logos/pn/logo_pn_invert_${lang}.svg`);
   const LogoCN = require(`../assets/imgs/logos/cn/logo_cn_${lang}.svg`);
   const LogoCN_Invert = require(`../assets/imgs/logos/cn/logo_cn_invert_${lang}.svg`);
   const LogoESN = require(`../assets/imgs/logos/esn/logo_esn_${lang}.svg`);
@@ -109,7 +107,7 @@ const Navigation = (props) => {
         </a>
         {/* <a
           className="pn networkLogo"
-          href="https://promonetwerk.be"
+          href="https://catalogusnetwerk.be"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -162,11 +160,11 @@ const Navigation = (props) => {
         <div className="nav_buttons">
           {/* Button to open the networks menu */}
           {accountData ?
-          <div className="nav_button my_company">{accountData.username}</div>
-          :
-          <a className="nav_button my_company" rel="noreferrer noopener" target="_blank" onClick={() => dispatch(toggleLoginScreen(!loginScreen))} >
-            {translate("log_in")}
-          </a>
+            <div className="nav_button my_company">{accountData.username}</div>
+            :
+            <a className="nav_button my_company" rel="noreferrer noopener" target="_blank" onClick={() => dispatch(toggleLoginScreen(!loginScreen))} >
+              {translate("log_in")}
+            </a>
           }
 
           <div className={`nav_button network ${networks ? "active" : ""}`} onClick={() => setNetworks(!networks)} >
@@ -183,13 +181,13 @@ const Navigation = (props) => {
             <div className="lang_options">
               {lang === "nl" ? (
                 <a
-                  href={`https://www.reseaupromo.be${path.replace('zoeken', 'chercher').replace('pagina', 'page')}`}
+                  href={`https://www.reseaucatalogue.be${path.replace('zoeken', 'chercher').replace('pagina', 'page')}`}
                 >
                   FR
                 </a>
               ) : (
                 <a
-                  href={`https://www.promonetwerk.be${path.replace('chercher', 'zoeken').replace('page', 'pagina')}`}
+                  href={`https://www.catalogusnetwerk.be${path.replace('chercher', 'zoeken').replace('page', 'pagina')}`}
                 >
                   NL
                 </a>)}

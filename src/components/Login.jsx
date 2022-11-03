@@ -157,16 +157,16 @@ const Login = (props) => {
             <div className="login_content">
                 <Icon className="close_icon" name="Close" onClick={() => dispatch(toggleLoginScreen(false))} />
                 <figure>
-                    <img src={require("../assets/imgs/logos/pn/promonetwerk-01.svg").default} alt="logo promonetwork" />
+                    <img src={require("../assets/imgs/logos/cn/catalnetwerk-01.svg").default} alt="logo promonetwork" />
                 </figure>
                 {accountInformation ?
-                    <h2>bedankt om <span style={{ "color": "var(--pn)" }}>&nbsp;jouw account&nbsp;</span>te bevestigen!</h2>
+                    <h2>bedankt om <span style={{ "color": "var(--cn)" }}>&nbsp;jouw account&nbsp;</span>te bevestigen!</h2>
                     :
-                    <h2>Welkom op het <span style={{ "color": "var(--pn)" }}>&nbsp;Promonetwerk</span></h2>}
+                    <h2>Welkom op het <span style={{ "color": "var(--cn)" }}>&nbsp;Catalogusnetwerk</span></h2>}
                 {
                     accountInformation ?
                         <div className="login_extra_info">
-                            <h2>Vul hieronder nog wat <span style={{ "color": "var(--pn)" }}>&nbsp;gegevens&nbsp;</span>van je aan</h2>
+                            <h2>Vul hieronder nog wat <span style={{ "color": "var(--cn)" }}>&nbsp;gegevens&nbsp;</span>van je aan</h2>
                             <div className="login_extra_info_fields">
                                 <label className="pref_language">{translate('preferred_language')}</label>
                                 <OsnSelect
