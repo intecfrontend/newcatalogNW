@@ -634,7 +634,8 @@ const Resultspage = (props) => {
                                             type='sub'
                                             size='S'
                                         />
-                                        <Link to={`/business/${item.id}`}>
+                                        {/* <Link to={`/business/${item.id}`}> */}
+                                        <Link to="/magazines">
                                             <Button
                                                 borderColor='cn'
                                                 text={`${translate('discover_more')}`}

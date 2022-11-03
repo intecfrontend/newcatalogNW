@@ -244,7 +244,7 @@ const DetailsPage = (props) => {
                         />
                     </div>
                     <ul>
-                        <li className="active">
+                    <li className="active">
                             <a onClick={() => changeCollection('all')} className={`${bpIndex === 'all' ? 'active' : ''}`}>{translate('info_and_magazines')}</a>
                             <div className="linkChildren">
                                 {menuItems.length > 1 &&
