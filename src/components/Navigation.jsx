@@ -151,7 +151,7 @@ const Navigation = (props) => {
               width="25px"
               alt={translate("esn_alt")}
               className="logo logoOriginal"
-              src={require(`../assets/imgs/logos/pn/promonetwerk-h-${lang}.svg`)}
+              src={require(`../assets/imgs/logos/cn/catalnetwerk-h-${lang}.svg`)}
             />
           </Link>}
 
